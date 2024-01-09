@@ -1,0 +1,79 @@
+<!-- 
+    Your product landing page should have a header element with a corresponding id="header"
+    You can see an image within the header element with a corresponding id="header-img" (A logo would make a good image here)
+    Within the #header element, you can see a nav element with a corresponding id="nav-bar"
+    You can see at least three clickable elements inside the nav element, each with the class nav-link
+    When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
+    You can watch an embedded product video with id="video"
+    Your landing page has a form element with a corresponding id="form"
+    Within the form, there is an input field with id="email" where you can enter an email address
+    The #email input field should have placeholder text to let users know what the field is for
+    The #email input field uses HTML5 validation to confirm that the entered text is an email address
+    Within the form, there is a submit input with a corresponding id="submit"
+    When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
+    The navbar should always be at the top of the viewport
+    Your product landing page should have at least one media query
+    Your product landing page should utilize CSS flexbox at least once
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+                <img class="header-img" src="https://simpleicons.org/icons/honda.svg">
+                <h1>Product Name</h1>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#section-one">Section One</a></li>
+                    <li><a class="nav-link" href="#section-two">Section Two</a></li>
+                    <li><a class="nav-link" href="#section-three">Section Three</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="section-one">
+                <h2>Curabitur ultricies turpis elit venenatis</h2>
+                <div class="product-info">
+                    <img src="https://simpleicons.org/icons/oneplus.svg">
+                    <div>
+                        <h3>Duis in</h3>
+                        <p>Integer sit amet urna vel urna finibus tincidunt. Quisque interdum enim ut nibh bibendum, id rhoncus eros varius. Nunc vel.</p>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <img>
+                    <div>
+                        <h3>Fusce euismod</h3>
+                        <p>In at sagittis est, at vulputate tortor. Proin tempor sodales velit, non dapibus arcu tempus venenatis. Donec nec nisl et.</p>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <img>
+                    <div>
+                        <h3>Ut ut</h3>
+                        <p>Pellentesque nec purus in metus pretium luctus eu in eros. Vestibulum blandit a ipsum quis accumsan. Aenean malesuada augue eu.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="section-two">
+                <h2>Fusce Viverra</h2>
+                <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+            </section>
+            <section id="section-three">
+                <h2>Learn More</h2>
+                <form id="form" method="post" action="https://www.freecodecamp.com/email-submit">
+                    <label>Email: <input type="email" placeholder="email@example.com" /></label>
+                    <input type="submit" id="submit">
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
