@@ -1,0 +1,86 @@
+<!--
+    Your portfolio should have a welcome section with an id of welcome-section
+    The welcome section should have an h1 element that contains text
+    Your portfolio should have a projects section with an id of projects
+    The projects section should contain at least one element with a class of project-tile to hold a project
+    The projects section should contain at least one link to a project
+    Your portfolio should have a navbar with an id of navbar
+    The navbar should contain at least one link that you can click on to navigate to different sections of the page
+    Your portfolio should have a link with an id of profile-link, which opens your GitHub or freeCodeCamp profile in a new tab
+    Your portfolio should have at least one media query
+    The height of the welcome section should be equal to the height of the viewport
+    The navbar should always be at the top of the viewport
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono">
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>> NICK CUNNINGHAM</header>
+            <ul>
+                <li><a href="#welcome-section">welcome</a></li>
+                <li><a href="#projects">portfolio</a></li>
+                <li><a href="#profile">socials</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="welcome-section">
+                <h1>HEY! I'M NICK.</h1>
+                <p class="subtitle">a web developer</p>
+            </section>
+            <section id="projects">
+                <h1>check out my work!</h1>
+                <div class="projects">
+                    <a href="https://nickecunningham.com/portfolio/thorb" class="project-tile">
+                        <img src="https://nickecunningham.com/assets/portfolio_thorb/thorb_thumbnail.jpg">
+                        thorb
+                    </a>
+                    <a href="https://nickecunningham.com/portfolio/thorb" class="project-tile">
+                        <img src="https://nickecunningham.com/assets/portfolio_dungeon_of_greyness/CombatDesign_Thumbnail.png">
+                        dungeon of greyness
+                    </a>
+                    <a href="https://nickecunningham.com/portfolio/thorb" class="project-tile">
+                        <img src="https://nickecunningham.com/assets/portfolio_escape_room/thumbnail.png">
+                        escape room
+                    </a>
+                    <a href="https://nickecunningham.com/portfolio/thorb" class="project-tile">
+                        <img src="https://nickecunningham.com/assets/portfolio_gravity_box/GravityBox_Thumbnail.png">
+                        gravity box
+                    </a>
+                    <a href="https://nickecunningham.com/portfolio/thorb" class="project-tile">
+                        <img src="https://nickecunningham.com/assets/portfolio_notline_miami/Images/NickCunningham_NotlineMiami_Icon2.png">
+                        notline miami
+                    </a>
+                    <a href="https://nickecunningham.com/portfolio/thorb" class="project-tile">
+                        <img src="https://nickecunningham.com/assets/portfolio_motorball_the_bounty/Motorball_Thumbnail.jpg">
+                        motorball: the bounty
+                    </a>
+                </div>
+            </section>
+            <section id="profile">
+                <h1>want to get in touch?</h1>
+                <p class="subtitle">find me on these platforms</p>
+                <div class="social-links">
+                    <a id="profile-link" href="" target="_blank">
+                        <img src="https://simpleicons.org/icons/freecodecamp.svg">
+                        freecodecamp
+                    </a>
+                    <a id="profile-link" target="_blank">
+                        <img src="https://simpleicons.org/icons/github.svg">
+                        github
+                    </a>
+                    <a id="profile-link" target="_blank">
+                        <img src="https://simpleicons.org/icons/gitea.svg">
+                        gitea
+                    </a>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
