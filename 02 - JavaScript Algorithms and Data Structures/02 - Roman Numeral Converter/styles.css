@@ -1,0 +1,104 @@
+:root {
+    --background-primary: #000000;
+    --background-secondary: #282A3A;
+    --background-tertiary: #3d3e4d;
+    --primary: #C69749;
+    --secondary: #735F32;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-primary);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+h1 {
+    padding-bottom: 32px;
+    font-weight: normal;
+    color: var(--primary);
+}
+
+h2 {
+    font-weight: normal;
+    padding-bottom: 16px;
+}
+
+input, button {
+    height: 50px;
+    padding: 8px 16px;
+}
+
+#input {
+    width: 500px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+    /* gap: 16px; */
+    background-color: var(--background-secondary);
+}
+
+#number-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#number, #output {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18pt;
+    color: white;
+    background-color: var(--background-tertiary);
+    border: none;
+}
+
+#number:focus-visible {
+    outline: 1pt solid white;
+    border: none;
+}
+
+#convert-btn {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 21pt;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary);
+    border: none;
+}
+
+#convert-btn:hover {
+    outline: 1pt solid white;
+}
+
+#convert-btn:active {
+    background-color: var(--secondary);
+}
+
+#output {
+    min-height: 50px;
+    margin-top: 8px;
+    vertical-align: middle;
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
