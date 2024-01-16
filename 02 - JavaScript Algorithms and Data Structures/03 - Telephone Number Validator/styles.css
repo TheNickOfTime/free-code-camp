@@ -1,0 +1,174 @@
+:root {
+    --background-color: black;
+    --primary-color: #1a1a1a;
+    --secondary-color: #333333;
+    --confirm-color: #42D551;
+    --invalid-color: #FB2C2C;
+    --text-color: white;
+    font-size: 2vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    /* position: absolute;
+    top: 1rem;
+    width: 100%; */
+    font-weight: 300;
+    letter-spacing: .75rem;
+}
+
+#phone-body {
+    height: 80vh;
+    width: 40vh;
+    aspect-ratio: 1 / 2;
+    padding: 0rem 1rem;
+    border-radius: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    border: 0.3rem solid var(--text-color);
+}
+
+#phone-notch {
+    width: 10rem;
+    height: 2rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: var(--text-color);
+}
+
+#phone-nav {
+    height: 0.5rem;
+    width: 8rem;
+    border-radius: 0.25rem;
+    margin: 1rem;
+    background: var(--secondary-color);
+}
+
+#phone-screen {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    /* background-color: white; */
+}
+
+#dial-view {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#dial-pad {
+    height: 60% !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    justify-content: space-evenly;
+    gap: 0.75rem;
+}
+
+#dial-actions {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+#user-input {
+    width: 100%;
+    height: 4rem;
+    margin: auto 0;
+    /* padding: 1.5rem; */
+    border-radius: 3rem;
+    border: none;
+    background-color: transparent;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2rem;
+}
+
+#user-input:hover {
+    background-color: var(--primary-color);
+}
+
+#user-input:focus-visible {
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+}
+
+#results-div {
+    text-align: center;
+    font-style: italic;
+    /* height: 1rem; */
+    margin: 1rem 0;
+}
+
+button, .dummy-button {
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    border: none;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+button:hover {
+    outline: 1pt solid var(--text-color)
+}
+
+button:active {
+    opacity: 75%;
+}
+
+i {
+    font-size: 2rem !important;
+    vertical-align: middle;
+    padding-bottom: 0.25rem !important;
+}
+
+#check-btn {
+    background-color: var(--confirm-color);
+}
+
+#clear-btn {
+    background-color: var(--invalid-color);
+    visibility: hidden;
+}
