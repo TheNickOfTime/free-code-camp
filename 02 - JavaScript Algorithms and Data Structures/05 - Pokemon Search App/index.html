@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://api.fontshare.com/v2/css?f[]=array@400&display=swap" rel="stylesheet"> 
+        <title>Pokemon Search App</title>
+    </head>
+    <body>
+        <main>
+            <div id="left-panel">
+                <div id="left-top">
+                    <div>
+                        <div id="top-blue-light"></div>
+                        <div id="top-red-light"></div>
+                        <div id="top-yellow-light"></div>
+                        <div id="top-green-light"></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <!-- <div></div>
+                        <div>
+                            <div></div>
+                            <div></div>
+                        </div> -->
+                    </div>
+                </div>
+                <div id="left-bottom">
+                    <div id="left-main">
+                        <div id="left-bezel">
+                            <div id="left-screen">
+                                <div>
+                                    <strong>
+                                        #<span id="pokemon-id">999</span> <span id="pokemon-name">Unknown</span>
+                                    </strong>
+                                </div>
+                                <div id="types">
+                                    <span>type1</span>
+                                    <span>type2</span>
+                                </div>
+                                <img id="sprite" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png">
+                            </div>
+                        </div>
+                        <div id="lower-buttons">
+                            <div>
+                                <div></div>
+                            </div>
+                            <div>
+                                <div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <div><img src="https://www.serebii.net/itemdex/rbitem.png"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="left-hinge"></div>
+                </div>
+            </div>
+            <div id="right-panel">
+                <div id="right-top">
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div></div>
+                </div>
+                <div id="right-bottom">
+                    <div id="right-screen">
+                        <table id="metrics-table">
+                            <tbody>
+                                <tr>
+                                    <th>Weight</th>
+                                    <th>Height</th>
+                                </tr>
+                                <tr>
+                                    <td id="weight">100lbs</td>
+                                    <td id="height">4ft</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr />
+                        <div id="stats-div">
+                            <span><strong>Stats</strong></span>
+                            <table id="stats-table">
+                                <tbody>
+                                    <tr>
+                                        <th>HP</th>
+                                        <td id="hp">100</td>
+                                        <th>Speed</th>
+                                        <td id="speed">100</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Atk.</th>
+                                        <td id="attack">100</td>
+                                        <th>Sp. Atk.</th>
+                                        <td id="special-attack">100</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Def.</th>
+                                        <td id="defense">100</td>
+                                        <th>Sp. Def.</th>
+                                        <td id="special-defense">100</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr>
+                        <span><strong>Pokémon Query</strong></span>
+                        <input id="search-input" type="text" placeholder="???" required>
+                    </div>
+                    <div id="search-keyboard">
+                        <button class="keyboard-key">A</button>
+                        <button class="keyboard-key">B</button>
+                        <button class="keyboard-key">C</button>
+                        <button class="keyboard-key">D</button>
+                        <button class="keyboard-key">E</button>
+                        <button class="keyboard-key">F</button>
+                        <button class="keyboard-key">G</button>
+                        <button class="keyboard-key">H</button>
+                        <button class="keyboard-key">I</button>
+                        <button class="keyboard-key">J</button>
+                        <button class="keyboard-key">K</button>
+                        <button class="keyboard-key">L</button>
+                        <button class="keyboard-key">M</button>
+                        <button class="keyboard-key">N</button>
+                        <button class="keyboard-key">O</button>
+                        <button class="keyboard-key">P</button>
+                        <button class="keyboard-key">Q</button>
+                        <button class="keyboard-key">R</button>
+                        <button class="keyboard-key">S</button>
+                        <button class="keyboard-key">T</button>
+                        <button class="keyboard-key">U</button>
+                        <button class="keyboard-key">V</button>
+                        <button class="keyboard-key">W</button>
+                        <button class="keyboard-key">X</button>
+                        <button class="keyboard-key">Y</button>
+                        <button class="keyboard-key">Z</button>
+                        <button class="material-icons" id="search-button">search</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
