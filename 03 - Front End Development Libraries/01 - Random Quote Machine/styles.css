@@ -1,0 +1,102 @@
+:root {
+    --background: #1C2826;
+    --primary: #E5446D;
+    --secondary: #628395;
+    --text-primary: #F7D1CD;
+    --text-secondary: #DAEFB3;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+    font-family: "Dosis";
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-color: var(--background);
+}
+
+#quote-box {
+    width: 500px;
+    min-height: 100px;
+    padding: 32px 64px;
+    background-color: var(--primary);
+    box-shadow: 16px 16px var(--secondary);
+}
+
+#quote-box > div {
+    width: 100%;
+}
+
+#exposition {
+    font-style: italic;
+    font-size: 18pt;
+    color: var(--text-primary);
+}
+
+#text {
+    font-family: "Caveat";
+    font-size: 32pt;
+    text-align: center;
+    margin: 10px auto;
+    letter-spacing: 2.5px;
+    color: var(--background);
+    /* text-shadow: 2px 2px var(--text-primary); */
+    /* initial-letter: 64px; */
+}
+
+#author {
+    font-size: 16pt;
+    text-align: right;
+    letter-spacing: 5px;
+    color: var(--text-primary);
+
+}
+
+#buttons {
+    margin-top: 32px;
+    width: 100%;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+
+#buttons > * {
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    color: var(--text-primary) !important;
+    border: 2pt solid var(--text-primary);
+    border-radius: 5pt;
+    box-shadow: 4px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#buttons > * > * {
+    font-size: 32px;
+
+}
+
+#buttons > *:hover {
+    background-color: var(--text-primary) !important;
+    color: var(--primary) !important;
+    border: 2pt solid var(--primary);
+    /* outline: 1pt solid var(--text-primary); */
+    box-shadow: 4px 4px var(--text-primary);
+}
