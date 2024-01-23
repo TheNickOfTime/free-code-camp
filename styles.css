@@ -1,0 +1,144 @@
+:root {
+    --background: #202020;
+    --course-card: #333533;
+    --project-card: #202020;
+    --text-main: #D6D6D6;
+    --accent-primary: #FFD100;
+    --accent-secondary: #F64740;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+    font-family: "Red Hat Mono";
+    color: var(--text-main);
+    letter-spacing: 1.5pt;
+}
+
+header {
+    width: 100vw;
+    height: 4rem;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    padding: 0 2rem;
+    color: var(--text-main);
+    font-weight: lighter;
+    letter-spacing: 0.5rem;
+}
+
+header > h1 > span {
+    font-weight: bold;
+    color: var(--accent-primary);
+}
+
+main {
+    width: 100vw;
+    height: calc(100vh - 4rem);
+    /* margin: 1rem; */
+    overflow: scroll;
+}
+
+h2 {
+    padding: 0 2rem;
+    color: var(--text-main);
+
+}
+
+h3 {
+    padding: 0 2rem;
+    color: var(--accent-secondary)
+}
+
+#courses-container {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+}
+
+.course {
+    background-color: var(--course-card);
+    padding: 2rem 0 1rem 0;
+    border-radius: 2rem;
+    box-shadow: 0.5rem 0.5rem black;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 1rem;
+    /* width: calc(100vw * 5); */
+}
+
+.projects-container > :first-child {
+    padding-left: 2rem;
+}
+
+.projects-container > :last-child {
+    padding-right: 2rem;
+}
+
+.project {
+    height: 300px;
+    min-width: 400px;
+    max-width: 400px;
+    /* background-color: #202020; */
+}
+
+.project-thumb {
+    height: 100%;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem var(--project-card);
+    /* text-align: center; */
+    /* padding: 0 auto; */
+}
+
+.project a {
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    padding: 0 auto;
+    text-decoration: none;
+    transition: 0.25s ease-in-out;
+}
+
+.project a:hover {
+    transform: scale(1.05);
+    transition: 0.25s ease-in-out;
+}
+
+.project a:hover .project-thumb {
+    box-shadow: 0.5rem 0.5rem var(--accent-primary);
+}
+
+footer {
+    height: 4rem;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-weight: 100;
+    font-size: 14pt;
+}
