@@ -57,6 +57,14 @@ const projects = [
                 name: "Random Quote Machine",
                 slug: "03 - Front End Development Libraries/01 - Random Quote Machine"
             },
+            {
+                name: "Markdown Previewer",
+                slug: "03 - Front End Development Libraries/02 - Markdown Previewer/dist"
+            },
+            {
+                name: "Drum Machine",
+                slug: "03 - Front End Development Libraries/03 - Drum Machine/dist"
+            },
         ]
     },
 ]
