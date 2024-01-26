@@ -65,6 +65,10 @@ const projects = [
                 name: "Drum Machine",
                 slug: "03 - Front End Development Libraries/03 - Drum Machine/dist"
             },
+            {
+                name: "JavaScript Calculator",
+                slug: "03 - Front End Development Libraries/04 - JavaScript Calculator/dist"
+            },
         ]
     },
 ]
