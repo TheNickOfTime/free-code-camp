@@ -69,6 +69,10 @@ const projects = [
                 name: "JavaScript Calculator",
                 slug: "03 - Front End Development Libraries/04 - JavaScript Calculator/dist"
             },
+            {
+                name: "25+5 Clock",
+                slug: "03 - Front End Development Libraries/05 - 25 + 5 Clock/dist"
+            },
         ]
     },
 ]
