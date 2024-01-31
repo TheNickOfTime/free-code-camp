@@ -75,6 +75,15 @@ const projects = [
             },
         ]
     },
+    {
+        course: "Front End Development Libraries",
+        projects: [
+            {
+                name: "Bar Chart",
+                slug: "04 - Data Visualization/01 - Bar Chart/dist"
+            },
+        ]
+    },
 ]
 
 $(document).ready(renderProjects);
