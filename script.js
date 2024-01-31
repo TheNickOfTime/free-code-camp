@@ -82,6 +82,10 @@ const projects = [
                 name: "Bar Chart",
                 slug: "04 - Data Visualization/01 - Bar Chart/dist"
             },
+            {
+                name: "Scatterplot Graph",
+                slug: "04 - Data Visualization/02 - Scatterplot Graph/dist"
+            },
         ]
     },
 ]
