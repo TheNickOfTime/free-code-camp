@@ -86,6 +86,10 @@ const projects = [
                 name: "Scatterplot Graph",
                 slug: "04 - Data Visualization/02 - Scatterplot Graph/dist"
             },
+            {
+                name: "Heat Map",
+                slug: "04 - Data Visualization/03 - Heat Map/dist"
+            }
         ]
     },
 ]

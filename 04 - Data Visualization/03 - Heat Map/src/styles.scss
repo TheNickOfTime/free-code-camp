@@ -1,0 +1,97 @@
+@use "sass:map";
+$map-colors: (
+    1: #1a759f,
+    2: #168aad,
+    3: #34a0a4,
+    4: #52b69a,
+    5: #76c893,
+    6: #99d98c,
+    7: #b5e48c,
+    8: #d9ed92,
+    9: #ffba08,
+    10: #faa307,
+    11: #f48c06,
+    12: #e85d04,
+    13: #dc2f02,
+    14: #d00000,
+    15: #9d0208,
+);
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
+
+@for $i from 1 through 15 {
+    .map-#{$i} {
+        fill: map.get($map-colors, $i);
+        // fill: white;
+    }
+}
+
+@for $i from 1 through 15 {
+    .tooltip-#{$i} {
+        color: map.get($map-colors, $i)
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#chart-wrapper {
+    height: 70%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Archivo Narrow', sans-serif;
+
+    #title {
+        margin: 0;
+        padding: 0;
+    }
+
+    #description {
+        margin: 0;
+        padding: 0;
+    }
+
+    #chart-svg {
+        overflow: visible;
+        margin-top: 16px;
+        margin-bottom: 125px;
+
+        * {
+            font-family: 'Archivo Narrow', sans-serif;
+            font-size: 12px;
+        }
+    }
+
+    #tooltip {
+        position: absolute;
+        transform: translate(-50%, -100%);
+        background-color: hsla(0, 0%, 0%, 0.75);
+        text-align: center;
+        padding: 15px;
+        border-radius: 5px;
+        font-size: 20px;
+
+        br {
+            margin: 5px 0;
+        }
+    }
+}
