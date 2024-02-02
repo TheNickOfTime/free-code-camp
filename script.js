@@ -5,23 +5,23 @@ const projects = [
         projects: [
             {
                 name: "Survey Form",
-                slug: "01 - Responsive Web Design/01 - Survey Form"
+                relative_path: "01 - Responsive Web Design/01 - Survey Form"
             },
             {
                 name: "Tribute Page",
-                slug: "01 - Responsive Web Design/02 - Tribute Page"
+                relative_path: "01 - Responsive Web Design/02 - Tribute Page"
             },
             {
                 name: "Technical Documentation",
-                slug: "01 - Responsive Web Design/03 - Technical Documentation"
+                relative_path: "01 - Responsive Web Design/03 - Technical Documentation"
             },
             {
                 name: "Product Landing Page",
-                slug: "01 - Responsive Web Design/04 - Product Landing Page"
+                relative_path: "01 - Responsive Web Design/04 - Product Landing Page"
             },
             {
                 name: "Personal Portfolio",
-                slug: "01 - Responsive Web Design/05 - Personal Portfolio"
+                relative_path: "01 - Responsive Web Design/05 - Personal Portfolio"
             },
         ]
     },
@@ -30,23 +30,23 @@ const projects = [
         projects: [
             {
                 name: "Palindrome Checker",
-                slug: "02 - JavaScript Algorithms and Data Structures/01 - Palindrome Checker"
+                relative_path: "02 - JavaScript Algorithms and Data Structures/01 - Palindrome Checker"
             },
             {
                 name: "Roman Numeral Converter",
-                slug: "02 - JavaScript Algorithms and Data Structures/02 - Roman Numeral Converter"
+                relative_path: "02 - JavaScript Algorithms and Data Structures/02 - Roman Numeral Converter"
             },
             {
                 name: "Telephone Number Validator",
-                slug: "02 - JavaScript Algorithms and Data Structures/03 - Telephone Number Validator"
+                relative_path: "02 - JavaScript Algorithms and Data Structures/03 - Telephone Number Validator"
             },
             {
                 name: "Cash Register",
-                slug: "02 - JavaScript Algorithms and Data Structures/04 - Cash Register"
+                relative_path: "02 - JavaScript Algorithms and Data Structures/04 - Cash Register"
             },
             {
                 name: "Pokemon Search App",
-                slug: "02 - JavaScript Algorithms and Data Structures/05 - Pokemon Search App"
+                relative_path: "02 - JavaScript Algorithms and Data Structures/05 - Pokemon Search App"
             },
         ]
     },
@@ -55,23 +55,23 @@ const projects = [
         projects: [
             {
                 name: "Random Quote Machine",
-                slug: "03 - Front End Development Libraries/01 - Random Quote Machine"
+                relative_path: "03 - Front End Development Libraries/01 - Random Quote Machine"
             },
             {
                 name: "Markdown Previewer",
-                slug: "03 - Front End Development Libraries/02 - Markdown Previewer/dist"
+                relative_path: "03 - Front End Development Libraries/02 - Markdown Previewer/dist"
             },
             {
                 name: "Drum Machine",
-                slug: "03 - Front End Development Libraries/03 - Drum Machine/dist"
+                relative_path: "03 - Front End Development Libraries/03 - Drum Machine/dist"
             },
             {
                 name: "JavaScript Calculator",
-                slug: "03 - Front End Development Libraries/04 - JavaScript Calculator/dist"
+                relative_path: "03 - Front End Development Libraries/04 - JavaScript Calculator/dist"
             },
             {
                 name: "25+5 Clock",
-                slug: "03 - Front End Development Libraries/05 - 25 + 5 Clock/dist"
+                relative_path: "03 - Front End Development Libraries/05 - 25 + 5 Clock/dist"
             },
         ]
     },
@@ -80,15 +80,19 @@ const projects = [
         projects: [
             {
                 name: "Bar Chart",
-                slug: "04 - Data Visualization/01 - Bar Chart/dist"
+                relative_path: "04 - Data Visualization/01 - Bar Chart/dist"
             },
             {
                 name: "Scatterplot Graph",
-                slug: "04 - Data Visualization/02 - Scatterplot Graph/dist"
+                relative_path: "04 - Data Visualization/02 - Scatterplot Graph/dist"
             },
             {
                 name: "Heat Map",
-                slug: "04 - Data Visualization/03 - Heat Map/dist"
+                relative_path: "04 - Data Visualization/03 - Heat Map/dist"
+            },
+            {
+                name: "Choropleth Map",
+                relative_path: "04 - Data Visualization/04 - Choropleth Map/dist"
             }
         ]
     },
@@ -114,8 +118,8 @@ function renderProjects () {
         for (let projectIndex in course.projects) {
             const project = course.projects[projectIndex];
             const projectName = project.name;
-            const projectSlug = project.slug.replace(/\s/g, "%20");
-            const projectURL = `${baseURL}${projectSlug}`;
+            const projectPath = project.relative_path.replace(/\s/g, "%20");
+            const projectURL = `${baseURL}${projectPath}`;
             const projectHTML = (
                 `<div class="project">
                     <a href="${projectURL}">
