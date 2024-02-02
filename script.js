@@ -93,6 +93,10 @@ const projects = [
             {
                 name: "Choropleth Map",
                 relative_path: "04 - Data Visualization/04 - Choropleth Map/dist"
+            },
+            {
+                name: "Treemap Diagram",
+                relative_path: "04 - Data Visualization/05 - Treemap Diagram/dist"
             }
         ]
     },

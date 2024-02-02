@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background-color: black;
+}
+
+#treemap-wrapper {
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+	color: black;
+	font-family: 'Sixtyfour', sans-serif;
+
+	#header {
+		max-height: 20%;
+		margin-bottom: 16px;
+		text-align: center;
+		// display: flex;
+		// flex-direction: column;
+
+		#title {
+			text-align: center;
+			color: white;
+		}
+	
+		#description {
+			text-align: center;
+			color: white;
+		}
+
+		span {
+			color: white;
+		}
+
+		select {
+			background-color: black;
+			border-radius: 0;
+			border: 2px solid white;
+			color: white;
+			font-family: 'Sixtyfour', sans-serif;
+			padding: 5px;
+			margin: 0 auto;
+
+			option {
+				font-family: 'Sixtyfour', sans-serif;
+			}
+		}
+	}
+
+	#treemap-svg {
+		overflow: visible;
+		max-height: 75%;
+		font-size: 10px;
+	}
+
+	#tooltip {
+		text-align: center;
+		padding: 10px;
+		font-size: 16px;
+		background-color: black;
+		color: white;
+		transform: translate(-50%, -100%);
+		position: absolute;
+		border: 2px solid white;
+	}
+}
