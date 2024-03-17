@@ -1,0 +1,10 @@
+ipykernel
+IPython
+matplotlib
+numpy
+pandas
+scipy
+scikit-learn
+seaborn
+six
+tensorflow-cpu==2.15
