@@ -8,3 +8,4 @@ scikit-learn
 seaborn
 six
 tensorflow-cpu==2.15
+tensorflow-datasets
